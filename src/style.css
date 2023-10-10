@@ -1,0 +1,223 @@
+/* src/styles.css */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: QuickCenSand, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0 320px; /* Space on both left and right sides */
+  }
+  
+  .header {
+    width: 100%;
+    background-color: #333;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 0; /* Reset the default margin */
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+  
+  
+  .title {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-right: 550px;
+  }
+  
+  .menu {
+    background-color: #444;
+    width: 100%;
+  }
+  
+  /*
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu ul li {
+    margin: 0;
+  }
+  */
+
+  /* styles.css */
+
+.menu ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu ul > li {
+    margin: 0 15px; /* Increase the horizontal spacing between menu items */
+    position: relative; /* Required for positioning submenu */
+  }
+
+  
+  .menu ul li:not(:last-child) {
+    margin-right: 1rem;
+  }
+  
+  .menu ul li:hover .submenu {
+    display: block;
+  }
+  
+  .menu ul li .submenu {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    padding: 0.5rem;
+    li {
+      margin: 0.3rem 0;
+    }
+  }
+
+
+  /* styles.css */
+
+.submenu {
+    display: none; /* Hide submenu by default */
+    position: absolute;
+    top: 100%; /* Position submenu below the parent item */
+    left: 0;
+    background-color: #fff; /* Background color of submenu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for submenu */
+    z-index: 1; /* Ensure submenu appears above other elements */
+  }
+  
+  .menu ul > li:hover .submenu {
+    display: block; /* Show submenu when parent menu item is hovered */
+  }
+  
+  .submenu li {
+    padding: 10px 20px; /* Padding for submenu items */
+    font-family: Arial, sans-serif; /* Font family for submenu items */
+    color: #333; /* Text color for submenu items */
+  }
+  
+  .submenu li:hover {
+    background-color: #333; /* Background color on hover */
+    color: orangered;
+  }
+
+  
+  
+  .content {
+    margin-top: 2rem;
+    width: 100%; /* Specify the custom width you want */
+    max-width: 1200px; /* Optionally, set a maximum width */
+    padding: 20px; /* Optional padding inside the content */
+    box-sizing: border-box;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    th, td {
+      border: 1px solid #ddd;
+      padding: 0.5rem;
+      text-align: left;
+    }
+  }
+
+  
+  /* styles.css */
+.envNameSpan {
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: white;
+  }
+  
+  .development {
+    background-color: lightgreen;
+    color: black
+  }
+  
+  .staging {
+    background-color: orange;
+  }
+  
+  .production {
+    background-color: red;
+  }
+
+
+  .table-container {
+    text-align: center;
+  }
+  
+  
+
+  .center-aligned-cell {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .table-container .center-aligned-cell {
+    text-align: center;
+  }
+  
+  /* Apply center alignment to both horizontal and vertical */
+  .table-container .center-aligned-cell > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+
+
+  
+
+
+/* style.css */
+.bold-key {
+    font-weight: bold;
+  }
+  
+  .property-container {
+    margin-bottom: 16px;
+  }
+  
+  .key-value-container {
+    margin-top: 8px;
+  }
+  
+  .key-value-pair {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .key {
+    font-weight: bold;
+    margin-right: 1px;
+  }
